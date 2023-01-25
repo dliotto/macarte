@@ -1,24 +1,9 @@
 import React from 'react';
-import {Image, StyleSheet, Text, View, ImageBackground} from 'react-native';
-import CardProps from './types';
+import {StyleSheet, TextInput} from 'react-native';
+import InputProps from './types';
 
-function Card({name, qtd, img, id}: CardProps): JSX.Element {
-  return (
-    <View key={`card-key-id-${id}`} style={styles.container}>
-      <ImageBackground source={img} style={styles.image} />
-
-      <View style={styles.infos}>
-        <View>
-          <View>
-            <Text style={styles.textContainer}>Name: {name}</Text>
-          </View>
-          <View>
-            <Text style={styles.textContainer}>Qtd: {qtd}</Text>
-          </View>
-        </View>
-      </View>
-    </View>
-  );
+function Input(props: InputProps): JSX.Element {
+  return <></>;
 }
 
 const styles = StyleSheet.create({
@@ -57,4 +42,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Card;
+export default Input;
