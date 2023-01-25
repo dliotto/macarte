@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image, StyleSheet, Text, View, ImageBackground} from 'react-native';
+import {StyleSheet, Text, View, ImageBackground} from 'react-native';
 import CardProps from './types';
 
 function Card({name, qtd, img, id}: CardProps): JSX.Element {

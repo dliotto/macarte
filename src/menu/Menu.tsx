@@ -41,10 +41,10 @@ function Menu(): JSX.Element {
     },
   };
 
-  function returnNameIcon(
+  const returnNameIcon = (
     route: RouteProp<ParamListBase, string>,
     focused: boolean,
-  ) {
+  ) => {
     let iconName: String = '';
 
     if (route.name === 'Preparação') {
@@ -60,7 +60,7 @@ function Menu(): JSX.Element {
     }
 
     return iconName;
-  }
+  };
 
   return (
     <NavigationContainer theme={MyTheme}>
